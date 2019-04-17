@@ -1,0 +1,20 @@
+.header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 140px;
+    margin-top: 15%;
+}
+
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 60px;
+}
+
+#time {
+    font-size: 100px;
+}
+
+#date {
+    font-size: 60px;
+}
