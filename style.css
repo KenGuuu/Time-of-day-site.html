@@ -7,15 +7,19 @@
     z-index:100;
     background-color: rgb(0, 238, 255);
     animation-name: light;
-    animation-duration: 0.9s;
+    animation-duration: 1.3s;
 }
 
 .header {
+    animation: moveLL 3s;
     font-family: "League";
+    text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
     text-align: center;
     font-size: 140px;
+    color: black;
     margin-top: 15%;
 }
+
 @font-face {
     font-family: "League";
     src: url(LeagueGothic-Regular.otf);
@@ -30,13 +34,17 @@
 }
 
 #time {
+    animation: moveR 4s;
     font-family: "League";
     font-size: 100px;
+    text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
 }
 
 #date {
+    animation: moveL 4s;
     font-family: "League";
     font-size: 60px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 @keyframes light {
@@ -45,5 +53,32 @@
     }
     to {
         filter: brightness(100%);
+    }
+}
+
+@keyframes moveL {
+    from {
+        margin-left: 30%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes moveR {
+    from {
+        margin-right: 30%;
+    }
+    to {
+        margin-right: 0%;
+    }
+}
+
+@keyframes moveLL {
+    from {
+        margin-left: 50%;
+    }
+    to {
+        margin-left: 0%;
     }
 }
