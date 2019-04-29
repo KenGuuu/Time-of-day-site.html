@@ -33,38 +33,9 @@ setInterval(function Welcoming()
 else if(x=="UK")
 {
 var today = new Date();
-var h = today.getHours()-1;
+var h = today.getHours();
 var date = today.getDate()+'.'+(today.getMonth()+1)+'.'+today.getFullYear();
-var time = (today.getHours()-1) + ":" + today.getMinutes() + ":" + today.getSeconds();
-var dateTime = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+' '+time;
-
-document.title=dateTime;
-document.getElementById("time").innerHTML = time;
-document.getElementById("date").innerHTML = date;
-
-if(h<=12 && h>4)
-{
-    document.getElementById("welcome").innerHTML = "Good Morning!";
-}
-else if(h>12 && h<18)
-{
-    document.getElementById("welcome").innerHTML = "Good Afternoon!";
-}
-else if(h>=18 && h<21)
-{
-    document.getElementById("welcome").innerHTML = "Good Evening!";
-}
-else
-{
-    document.getElementById("welcome").innerHTML = "You should go to bed!";
-}
-}
-else if(x=="USA")
-{
-var today = new Date();
-var h = today.getHours()-6;
-var date = today.getDate()+'.'+(today.getMonth()+1)+'.'+today.getFullYear();
-var time = (today.getHours()-6) + ":" + today.getMinutes() + ":" + today.getSeconds();
+var time = (today.getHours()) + ":" + today.getMinutes() + ":" + today.getSeconds();
 var dateTime = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+' '+time;
 
 document.title=dateTime;
@@ -149,9 +120,9 @@ else
 else if(x=="Russia")
 {
 var today = new Date();
-var h = today.getHours()+1;
+var h = today.getHours();
 var date = today.getDate()+'.'+(today.getMonth()+1)+'.'+today.getFullYear();
-var time = (today.getHours()+1) + ":" + today.getMinutes() + ":" + today.getSeconds();
+var time = (today.getHours()) + ":" + today.getMinutes() + ":" + today.getSeconds();
 var dateTime = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+' '+time;
 
 document.title=dateTime;

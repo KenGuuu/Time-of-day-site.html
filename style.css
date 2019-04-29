@@ -5,16 +5,22 @@
     top: 0px;
     left: 0px;
     z-index:100;
-    background-color: white;
+    background-color: rgb(0, 238, 255);
     animation-name: light;
     animation-duration: 0.9s;
 }
 
 .header {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "League";
     text-align: center;
     font-size: 140px;
     margin-top: 15%;
+}
+@font-face {
+    font-family: "League";
+    src: url(LeagueGothic-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
 }
 
 .content {
@@ -24,14 +30,20 @@
 }
 
 #time {
+    font-family: "League";
     font-size: 100px;
 }
 
 #date {
+    font-family: "League";
     font-size: 60px;
 }
 
 @keyframes light {
-    from {filter: brightness(0%);}
-    to {filter: brightness(100%);}
+    from {
+        filter: brightness(0%);
+    }
+    to {
+        filter: brightness(100%);
+    }
 }
